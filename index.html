@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-style-mode" content="1" />
+    <title>Brighter Minds  | Vocational College</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page-shell">
+      <nav class="topbar" aria-label="Main navigation">
+        <div class="brand">
+          <span class="brand-mark">BM</span>
+          <div>
+            <strong>Brighter Minds Technical</strong>
+            <small>& Vocational College</small>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="menu-button" type="button" aria-label="Open menu">☰</button>
+          <div class="dropdown-content">
+             <a href="BMSW1/index1.html">Courses offered</a>
+            <a href="BMSW/index2.html">Contact information</a>
+            <a href="#admission">Admissions</a>
+            <a href="#directions">Directions</a>
+            <a href="about.html">About us</a>
+            <a href="mailto:brightermindsvocational@gmail.com?subject=Admission%20Inquiry">Email us</a>
+            <a href="tel:+254726301589">Call us</a>
+          </div>
+        </div>
+      </nav>
+
+      <header class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Knowledge. Discipline. Success.</p>
+          <h1>Welcome to Brighter Minds</h1>
+          <p class="lead">
+            We train ambitious students with practical skills, strong values, and a
+            future-focused mindset that helps them thrive in the workplace and beyond.
+          </p>
+
+          <div class="cta-row">
+            <a class="primary-btn" href="#admission">Apply now</a>
+            <a class="secondary-btn" href="about.html">Learn more</a>
+          </div>
+
+          <ul class="mini-stats">
+            <li><strong>20+</strong><span>Programs</span></li>
+            <li><strong>500+</strong><span>Students</span></li>
+            <li><strong>98%</strong><span>Career readiness</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <img src="bright6.jpg" alt="Students at Brighter Minds" />
+          <div class="hero-overlay">
+            <span class="overlay-tag">Admissions Open</span>
+            <h3>Build skills. Shape your future.</h3>
+            <p>Practical learning for confident, career-ready graduates.</p>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="gallery-section">
+          <div class="section-heading">
+            <p class="eyebrow">Campus life</p>
+            <h2>Learning in motion</h2>
+          </div>
+
+          <div class="marquee" aria-label="Brighter Minds gallery">
+            <div class="marquee-track">
+              <img src="bright1.jpg" alt="Student learning" />
+              <img src="bright2.jpg" alt="School environment" />
+              <img src="bright3.jpg" alt="Training activity" />
+              <img src="bright4.jpg" alt="Classroom" />
+              <img src="bright5.jpg" alt="Students outdoors" />
+              <img src="bright6.jpg" alt="Vocational training" />
+              <img src="bright7.jpg" alt="Academic life" />
+              <img src="bright8.jpg" alt="Student engagement" />
+              <img src="bright9.jpg" alt="Community learning" />
+              <img src="bright10.jpg" alt="School community" />
+
+              <img src="bright1.jpg" alt="Student learning" />
+              <img src="bright2.jpg" alt="School environment" />
+              <img src="bright3.jpg" alt="Training activity" />
+              <img src="bright4.jpg" alt="Classroom" />
+              <img src="bright5.jpg" alt="Students outdoors" />
+              <img src="bright6.jpg" alt="Vocational training" />
+              <img src="bright7.jpg" alt="Academic life" />
+              <img src="bright8.jpg" alt="Student engagement" />
+              <img src="bright9.jpg" alt="Community learning" />
+              <img src="bright10.jpg" alt="School community" />
+            </div>
+          </div>
+        </section>
+
+        <header class="motto-banner">
+          <p><strong>Motto:</strong> Knowledge, Discipline & Success</p>
+        </header>
+
+        <section id="admission" class="admission">
+          <p class="eyebrow accent">Admission open</p>
+          <h2>Join the next generation of skilled professionals</h2>
+          <p>
+            We are pleased to announce that admissions are now open for the new academic
+            year. Join our institution and experience quality education, discipline, and
+            excellence.
+          </p>
+          <a class="primary-btn" href="BMSW/index2.html">Apply now</a>
+        </section>
+
+        <section id="directions" class="directions">
+          <h3>📍 Directions</h3>
+          <p>Our school is easily accessible and located in a convenient area for students and families.</p>
+          <ul>
+            <li>We are located in Banana Hill town.</li>
+            <li>From Banana stage near Shell petrol station, walk straight for about 100 meters towards Ruaka town.</li>
+            <li>The school gate will be on your right side.</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 Brighter Minds | Excellence in Education</p>
+      </footer>
+    </div>
+
+    <script>
+      const dropdown = document.querySelector('.dropdown');
+      const menuButton = document.querySelector('.menu-button');
+
+      if (dropdown && menuButton) {
+        menuButton.addEventListener('click', function (event) {
+          event.stopPropagation();
+          dropdown.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function (event) {
+          if (!dropdown.contains(event.target)) {
+            dropdown.classList.remove('open');
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
